@@ -86,7 +86,6 @@ All original code is 2-clause BSD licensed.  See [LICENSE](LICENSE) file.
 
 ## Interface specification
 
-This was tested with the v1.33 interface, which is documented here:
-
-https://www.qrz.com/XML/current_spec.html
+This was tested with the [v1.33](https://www.qrz.com/XML/QRZXML_Spec_1.33.html)
+interface.
 
