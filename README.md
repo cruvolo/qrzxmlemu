@@ -1,7 +1,7 @@
 # QRZ.com XML interface emulator
 
 This is wrapper code to emulate the http://www.qrz.com/ XML database lookup
-feature using a html scraping interface.
+feature using a HTML scraping interface.
 
 ## About this emulator
 
