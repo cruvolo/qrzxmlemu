@@ -56,6 +56,8 @@ it there (use an appropriate choice in naming this configuration file):
 On lines 12, 13 and 31 change the path for the `qrzxmlemu` git checkout
 directory to match your checkout path.
 
+Then, enable the configuration and reload apache:
+
 11. `cd /etc/apache2/sites-enabled/; sudo ln -s ../sites-available/002-qrzxml.conf`
 12. Reload the apache configuration: `sudo /etc/init.d/apache2 reload`
 
@@ -66,6 +68,9 @@ directory to match your checkout path.
 ### Verify output:
 
 ```
+$ grep xmldata /etc/hosts
+127.0.0.1	xmldata.qrz.com
+
 $ curl 'http://xmldata.qrz.com/xml/current/?s=21529326d6f39f02df51826ec8989b73;callsign=AA7BQ'
 <?xml version="1.0" ?>
 <QRZDatabase version="1.33">
