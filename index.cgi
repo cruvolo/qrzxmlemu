@@ -2,7 +2,7 @@
 
 # xmldata.qrz.com XML callsign lookup emulation.  2-clause BSD license.
 
-# Copyright 2019 Chris Ruvolo. All rights reserved.
+# Copyright 2020 Chris Ruvolo. All rights reserved.
 
 use strict;
 use warnings;
@@ -19,6 +19,16 @@ my $qrzpath = dirname(realpath(__FILE__)) . "/../qrmbot/lib/qrz";
 
 my $cgi = CGI->new;
 my %param = map { $_ => scalar $cgi->param($_) } $cgi->param() ;
+
+if (exists $param{'html'} or exists $param{'dxcc'}) {
+  print $cgi->header(
+    -type => 'text/plain;charset=UTF-8',
+    -status => '501 Not Implemented'
+  );
+  print "501 Not Implemented\n";
+  exit 0;
+}
+
 print $cgi->header( -type => 'text/xml;charset=UTF-8' );
 
 print('<?xml version="1.0" ?>',"\n");
