@@ -32,7 +32,7 @@ if (exists $param{'html'} or exists $param{'dxcc'}) {
 print $cgi->header( -type => 'text/xml;charset=UTF-8' );
 
 print('<?xml version="1.0" ?>',"\n");
-print('<QRZDatabase version="1.33">',"\n");
+print('<QRZDatabase version="1.34">',"\n");
 
 if (exists $param{'callsign'}) {
   my $c = uc $param{'callsign'};

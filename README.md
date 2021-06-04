@@ -73,7 +73,7 @@ $ grep xmldata /etc/hosts
 
 $ curl 'http://xmldata.qrz.com/xml/current/?s=21529326d6f39f02df51826ec8989b73;callsign=AA7BQ'
 <?xml version="1.0" ?>
-<QRZDatabase version="1.33">
+<QRZDatabase version="1.34">
   <Callsign>
     <call>AA7BQ</call>
     <aliases>AA7BQ/QRP,AA7BQ/R,AA7BQ/M,N6UFT,AA7BQ/DL1,AA7BQ/HR6</aliases>
@@ -86,6 +86,6 @@ All original code is 2-clause BSD licensed.  See [LICENSE](LICENSE) file.
 
 ## Interface specification
 
-This was tested with the [v1.33](https://www.qrz.com/XML/QRZXML_Spec_1.33.html)
+This was tested with the [v1.34](https://www.qrz.com/XML/QRZXML_Spec_1.34.html)
 interface.
 
